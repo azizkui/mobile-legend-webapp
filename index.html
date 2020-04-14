@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Belajar HTML</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <header>
+        <nav id="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+        </nav>
+        <!-- <div class="jumbroton">
+
+        </div> -->
+        <img src="assets/images/ML.jpg" alt="Logo" height="680px" class="image-highlight" />
+        <div class="tab">
+            <button class="tablinks" onclick="openRoles(event, 'Tank')">
+                Tank
+            </button>
+            <button class="tablinks" onclick="openRoles(event, 'Fighter')">
+                Fighter
+            </button>
+            <button class="tablinks" onclick="openRoles(event, 'Mage')">
+                Mage
+            </button>
+            <button class="tablinks" onclick="openRoles(event, 'Assasin')">
+                Assasin
+            </button>
+            <button class="tablinks" onclick="openRoles(event, 'Maskman')">
+                Maskman
+            </button>
+            <button class="tablinks" onclick="openRoles(event, 'Support')">
+                Support
+            </button>
+        </div>
+    </header>
+
+    <main>
+        <div id="content">
+            <article id="sejarah" class="card">
+                <div id="Tank" class="tabcontent">
+                    <a onclick="onCurrentStateChange(0)">
+                        <img class="img-logo-hero" src="assets/images/hero/tank/akai/akai-logo.jpg" />
+                    </a>
+                    <img class="img-logo-hero" src="assets/images/hero/tank/franco/franco-logo.jpg" />
+                    <img class="img-logo-hero" src="assets/images/hero/tank/jonshon/jonshon-logo.jpg" />
+                    <img class="img-logo-hero" src="assets/images/hero/tank/minotaur/logo-minotaur.jpg" />
+                    <img class="img-logo-hero" src="assets/images/hero/tank/uranus/logo-uranus.jpg" />
+                    <div id="geografis" class="card2">
+                        <h2 id="geografis">Geografis</h2>
+                        <img class="featured-image" src="assets/image/geografis.jpg" width="300px" alt="" />
+                    </div>
+                    <div id="hero">
+                        <h2 id="hero-name"></h2>
+                        <img id="image-hero" />
+                    </div>
+                </div>
+            </article>
+            <article class="card">
+                <div class="card2" style="display: flex; flex-direction: row;">
+                    <div style="width: 50%;">
+                        <h2>Tank</h2>
+                        <div style="float: left;">
+                            <img class="img-logo-hero" src="assets/images/hero/tank/franco/franco-logo.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/tank/jonshon/jonshon-logo.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/tank/minotaur/logo-minotaur.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/tank/uranus/logo-uranus.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/tank/akai/akai-logo.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/assasin/selena/selena-logo.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/assasin/selena/selena-logo.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/assasin/selena/selena-logo.jpg" />
+                            <img class="img-logo-hero" src="assets/images/hero/assasin/selena/selena-logo.jpg" />
+                        </div>
+                    </div>
+                    <div class="card2" style="width: 50%; margin: 20px;">
+                        <img style="text-align: center;" src="assets/images/hero/tank/akai/akai-view.png" width="380px"
+                            alt="" />
+                        <h2 style="text-align: center;">Akai</h2>
+                        <div class="roles-hero">
+                            <h2>Role</h2>
+                            <h2>Tank</h2>
+                        </div>
+                        <div class="speciality">
+                            <div>
+                                <h2>Speciality</h2>
+                            </div>
+                            <div>
+                                <h2>Initiator/Crowd Control</h2>
+                            </div>
+                        </div>
+                        <!-- Atribute Code Start -->
+                        <div class="hero-attributes">
+                            <div>
+                                <h4 class="mw-headline">Attributes</h4>
+                            </div>
+                            <div class="attributes">
+
+                                <div>Movement Speed: </div>
+                                <div>260</div>
+                                <div>Mana: </div>
+                                <div>422</div>
+
+
+                                <div>Physical Attack: </div>
+                                <div>115</div>
+                                <div>Attack Speed: </div>
+                                <div>0.85</div>
+
+
+                                <div>Magic Power: </div>
+                                <div>0</div>
+                                <div>HP Regen: </div>
+                                <div>42</div>
+
+
+                                <div>Armor: </div>
+                                <div>24</div>
+                                <div>Mana Regen: </div>
+                                <div>12</div>
+
+
+                                <div>Magic Resistance: </div>
+                                <div>10</div>
+                                <div>Basic Attk Crit Rate: </div>
+                                <div>0</div>
+
+
+                                <div>HP: </div>
+                                <div>2769</div>
+                                <div>Ability Crit Rate: </div>
+                                <div>0</div>
+
+                            </div>
+                        </div>
+                        <!-- Atribute Code End -->
+
+                        <!-- Skill code Start -->
+                        <div>
+                            <h1 style="text-align: center;">SKILL</h1>
+                        </div>
+                        <!-- Passive -->
+                        <div>
+                            <div class="layout-skill">
+                                <div>
+                                    <h1>Tai Chi</h1>
+                                </div>
+                                <div class="layout-cd-mp">Passive</div>
+                            </div>
+                            <div class="layout-skill two">
+                                <div>
+                                    <img class="img-skill" src="assets/images/hero/tank/akai/skill/Tai_Chi.png"
+                                        alt="" />
+                                </div>
+                                <div class="description-skill ">
+                                    <span>
+                                        Everytime a skill is used, Akai gains a shield that absorbs
+                                        up to 6% of his maximum HP. Lasts 2 seconds, this effect has
+                                        a 2.5 second cooldown.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Skill 1 -->
+                        <div>
+                            <div class="layout-skill">
+                                <div>
+                                    <h1>Thousand Pounder</h1>
+                                </div>
+                                <div class="layout-cd-mp">
+                                    <div>Cooldown: <span>10</span></div>
+                                    <div>Mana Cost: <span>70</span></div>
+                                </div>
+                            </div>
+                            <div class="layout-skill">
+                                <div class="layout-img-skill"> <img class="img-skill"
+                                        src="assets/images/hero/tank/akai/skill/Thousand_Pounder.png" alt="" />
+                                </div>
+                                <div class="description-skill">
+                                    <span>
+                                        Akai jumps towards a designated location. Upon landing, Akai
+                                        deals 300(+65%Total Physical Attack) points of Physical
+                                        Damage to enemy units, while expercieincing a slow effect
+                                        for 2 seconds. Akai deals bonus damage to marked enemies and
+                                        causes a stun effect for 1 seconds.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Skill 2 -->
+                        <div>
+                            <div class="layout-skill">
+                                <div>
+                                    <h1>Blender</h1>
+                                </div>
+                                <div class="layout-cd-mp">
+                                    <div style="opacity: 0;">Cooldown: <span>6.5</span></div>
+                                    <div>Cooldown: <span>6.5</span></div>
+                                    <div>Mana Cost: <span>65</span></div>
+                                </div>
+                            </div>
+                            <div class="layout-skill">
+                                <div class="layout-img-skill">
+                                    <img class="img-skill" src="assets/images/hero/tank/akai/skill/Blender.png"
+                                        alt="" />
+                                </div>
+                                <div class="description-skill">
+                                    <span>
+                                        Akai fires a frog shaped shockwave in the designated direction that explodes
+                                        on
+                                        contact with enemies or once it reaches maximum range, dealing
+                                        350(+135%Extra
+                                        Physical Attack) points of Physical Damage and marking them for 4 seconds.
+                                        His
+                                        basic attacks on marked targets deal extra 8% of Akai's maximum health as
+                                        physical damage.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Ultimate -->
+                        <div class="box-ulti">
+                            <div class="layout-skill">
+                                <div>
+                                    <h1>Hurricane Dance</h1>
+                                </div>
+                                <div class="layout-cd-mp">
+                                    <div>Cooldown: <span>35.5</span></div>
+                                    <div>Mana Cost: <span>120</span></div>
+                                </div>
+                            </div>
+                            <div class="layout-skill">
+                                <div class="layout-img-skill">
+                                    <img class="img-skill" src="assets/images/hero/tank/akai/skill/Hurricane_Dance.png"
+                                        alt="" />
+                                </div>
+                                <div class="description-skill">
+                                    <span>
+                                        Akai removes all CC effects from him and spins like a tornado for 3.5
+                                        seconds.
+                                        Each collision knocks back the target and deals 180(+165%Extra Physical
+                                        Attack)
+                                        points of Physical Damage (damage decays against the same target). During
+                                        the
+                                        time, Akai becomes immune to all CC effects and gains movement speed by 30%.
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Skill code End -->
+                        <h2 id=" hero-name"></h2>
+                        <img id="image-hero" />
+                    </div>
+                </div>
+            </article>
+            <!-- <article id="wisata" class="card">
+                <h2>Wisata</h2>
+                <p>Sejak dibukanya Jalan Tol Cipularang, kota Bandung telah menjadi tujuan utama dalam menikmati liburan
+                    akhir
+                    pekan
+                    terutama dari masyarakat yang berasal dari Jakarta sekitarnya. Selain menjadi kota wisata belanja,
+                    kota Bandung juga dikenal dengan sejumlah besar bangunan lama berarsitektur peninggalan Belanda.</p>
+                <section>
+                    <h3>Farm House Lembang</h3>
+                    <img class="featured-image" src="assets/image/farm-house.jpg" alt="">
+
+                    <h4>Lokasi</h4>
+                    <p>Berada di jalur utama Bandung-Lembang, Farm House menjadi objek wisata yang tidak pernah sepi
+                        pengunjung.
+                    </p>
+                    <h4>Kondisi</h4>
+                    <p>
+                        Selain
+                        karena letaknya strategis, kawasan ini juga menghadirkan nuansa wisata khas Eropa. Semua itu
+                        diterapkan
+                        dalam
+                        bentuk spot swafoto Instagramable.
+                    </p>
+                </section>
+                <section>
+                    <h3>Observatorium Bosscha</h3>
+
+                    <img class="featured-image" src="assets/image/bosscha.jpg" alt="">
+
+                    <p>Memiliki beberapa teleskop, antara lain, Refraktor Ganda Zeiss, Schmidt Bimasakti, Refraktor
+                        Bamberg,
+                        Cassegrain
+                        GOTO, dan Teleskop Surya. Refraktor Ganda Zeiss adalah jenis teleskop terbesar untuk meneropong
+                        bintang.
+                        Benda
+                        ini diletakkan pada atap kubah sehingga saat teropong digunakan, atap tersebut harus dibuka.
+                        Observatorium
+                        Bosscha boleh dikunjungi oleh siapapun, tanpa tiket. Namun, bagi yang ingin
+                        menggunakan teleskop Zeiss, wajib mendaftarkan diri. Untuk instansi atau lembaga pendidikan,
+                        diberikan
+                        jadwal
+                        hari Selasa sampai Jumat. Sementara itu, kunjungan individu dibuka setiap hari Sabtu.</p>
+                </section>
+            </article> -->
+        </div>
+
+        <aside>
+            <article class="profile card">
+                <h2>My Profile</h2>
+                <p>Muhammad Rizky Aziz Rudnono</p>
+                <img class="featured-image-pp" src="assets/images/photo-profile/aziz.png" alt="" />
+                <figcaption>Beginner Programmer</figcaption>
+                <section>
+                    <h3>Biodata</h3>
+                    <table class="info-lain-profile">
+                        <tr>
+                            <th>Name</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Born</th>
+                            <td>15 April 1998</td>
+                        </tr>
+                        <tr>
+                            <th>Height</th>
+                            <td>167 cm <sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <th>Language</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Kode Telepon</th>
+                            <td>+62 22</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+            <article class="profile card">
+                <h2>Follow Me in</h2>
+                <p>Kota Kembang Paris van Java</p>
+                <img class="featured-image" src="assets/image/bandung-badge.png" alt="" />
+                <figcaption>Lambang</figcaption>
+                <section>
+                    <h3>Informasi Lainnya</h3>
+                    <table class="info-lain-profile">
+                        <tr>
+                            <th>Negara</th>
+                            <td>Indonesia</td>
+                        </tr>
+                        <tr>
+                            <th>Hari Jadi</th>
+                            <td>25 September 1810</td>
+                        </tr>
+                        <tr>
+                            <th>Luas Total</th>
+                            <td>167.67 km <sup>2</sup></td>
+                        </tr>
+                        <tr>
+                            <th>Bahasa Daerah</th>
+                            <td>Sunda</td>
+                        </tr>
+                        <tr>
+                            <th>Kode Telepon</th>
+                            <td>+62 22</td>
+                        </tr>
+                    </table>
+                </section>
+            </article>
+        </aside>
+    </main>
+
+    <footer>
+        <p>SEMPAK MIBER &#169; 2020</p>
+    </footer>
+</body>
+<script src="assets/js/index.js"></script>
+
+</html>
