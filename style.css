@@ -3,7 +3,7 @@
 }
 
 div {
-  /* border: 1px solid springgreen; */
+  border: 1px solid springgreen;
 }
 
 body {
@@ -314,18 +314,6 @@ footer {
   }
 }
 
-/* css e skill hero start*/
-.img-skill {
-  width: 75px;
-  align-self: center;
-}
-
-.description-skill {
-  padding-left: 20px;
-}
-
-/* css e skill hero end */
-
 /* Atribute Start */
 .hero-attributes {
   width: 800px;
@@ -361,32 +349,16 @@ footer {
 }
 
 /* Atribute End*/
-
-.roles-hero,
-.speciality {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+/* Skill Style Start */
+.skill-container {
+  width: 800px;
 }
-
-/* box ulti */
-.box-ulti {
-  /* border: lightcoral;
-  background-color: lightsalmon; */
-}
-
-/* layout skill */
 
 .layout-skill {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   border-style: solid;
-  /* margin: 5px; */
-  padding: 10px;
-  /* padding-top: 15px;
-  padding-left: 10px;
-  padding-right: 10px; */
 }
 
 .two {
@@ -396,8 +368,9 @@ footer {
 
 .layout-cd-mp {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap-reverse;
-  justify-content: flex-end;
+  justify-content: center;
   align-content: center;
   text-align: center;
 }
@@ -406,10 +379,19 @@ footer {
   align-self: center;
 }
 
+.img-skill {
+  width: 75px;
+  align-self: center;
+}
+
+.description-skill {
+  padding-left: 20px;
+}
+
+/* Skill Style End */
+
 /* gak jelas */
-
-
-.img-logo-hero {
+/* .img-logo-hero {
   border-radius: 100px;
   width: 100px;
   margin: 10px;
@@ -436,6 +418,6 @@ footer {
 
 .profile img {
   width: 200px;
-}
+} */
 
 /* gak jelas end */
