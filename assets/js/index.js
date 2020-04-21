@@ -1,4 +1,3 @@
-// navbar hidden start
 let prevScrollpos = window.pageYOffset;
 var currentState = {
     name: "Nana",
@@ -6,18 +5,19 @@ var currentState = {
     image: "assets/images/hero/tank/uranus/logo-uranus.jpg"
 };
 
+// navbar hidden start
 window.onscroll = function () {
     var currentScrollPos = window.pageYOffset;
     if (prevScrollpos > currentScrollPos) {
         document.getElementById("navbar").style.top = "0";
     } else {
-        document.getElementById("navbar").style.top = "-50px";
+        document.getElementById("navbar").style.top = "-100px";
     }
     prevScrollpos = currentScrollPos;
 }
 // navbar hidden end
 
-function openRoles(evt, cityName) {
+function openRoles(evt, roleshero) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
@@ -27,7 +27,7 @@ function openRoles(evt, cityName) {
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
-    document.getElementById(cityName).style.display = "block";
+    document.getElementById(roleshero).style.display = "block";
     evt.currentTarget.className += " active";
 }
 
